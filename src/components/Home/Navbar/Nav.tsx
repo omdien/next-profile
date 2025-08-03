@@ -23,7 +23,7 @@ const Nav = () => {
           })}
         </div>
         {/* buttons */}
-        <div className="flex items-center space-x-4">
+        {/* <div className="flex items-center space-x-4">
           <a
             href="#_"
             className="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none"
@@ -48,7 +48,7 @@ const Nav = () => {
               Login
             </span>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

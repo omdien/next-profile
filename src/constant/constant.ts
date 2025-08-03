@@ -7,26 +7,16 @@ export const navLinks = [
   {
     id: 2,
     href: "#",
-    label: "About",
+    label: "Fitur",
   },
   {
     id: 3,
     href: "#",
-    label: "Features",
+    label: "Tentang",
   },
   {
     id: 4,
     href: "#",
-    label: "Price",
-  },
-  {
-    id: 5,
-    href: "#",
-    label: "Testimonials",
-  },
-  {
-    id: 6,
-    href: "#",
-    label: "Contact",
+    label: "Tugas",
   },
 ];
