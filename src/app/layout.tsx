@@ -1,7 +1,9 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import ResponsiveBar from "@/components/Home/Navbar/ResponsiveBar";
+import Provider from "@/components/Hoc/Provider";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -19,12 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${font.className}  antialiased`}
-      >
-        <ResponsiveBar />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${font.className} antialiased`}>
+        <Provider>
+          <nav className="fixed top-0 left-0 w-full z-50">
+            <ResponsiveBar />
+            {children}
+          </nav>
+        </Provider>
       </body>
     </html>
   );

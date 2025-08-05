@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { navLinks } from "@/constant/constant";
 import { FaShoppingBag } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import ThemeToggler from "@/components/Helper/ThemeToggler";
 
 type Props = {
   openNav: () => void;
@@ -48,7 +49,7 @@ const Nav = ({ openNav }: Props) => {
         </div>
         {/* buttons */}
         <div className="flex items-center space-x-4">
-          <a
+          {/* <a
             href="#_"
             className="box-border relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-emerald-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none"
           >
@@ -58,9 +59,10 @@ const Nav = ({ openNav }: Props) => {
               <FaShoppingBag className="mr-2" />
               Drive
             </span>
-          </a>
+          </a> */}
 
           {/* theme switch button */}
+          <ThemeToggler />
           {/* burger menu */}
           <HiBars3BottomRight
             onClick={openNav}
