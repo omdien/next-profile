@@ -3,7 +3,7 @@ import React from 'react';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
 
-const ResponsiveBar = () => {
+const ResponsiveNav = () => {
     // state for mobile nav
     const [showNav, setShowNav] = React.useState(false);
     const handleNavOpen = () => {
@@ -21,4 +21,4 @@ const ResponsiveBar = () => {
     );
 }
 
-export default ResponsiveBar;
+export default ResponsiveNav;

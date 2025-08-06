@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import ResponsiveBar from "@/components/Home/Navbar/ResponsiveBar";
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Provider from "@/components/Hoc/Provider";
 
 const font = Poppins({
@@ -24,10 +24,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${font.className} antialiased`}>
         <Provider>
-          <nav className="fixed top-0 left-0 w-full z-50">
-            <ResponsiveBar />
+          {/* <nav className="fixed top-0 left-0 w-full z-50"> */}
+            <ResponsiveNav />
             {children}
-          </nav>
+          {/* </nav> */}
         </Provider>
       </body>
     </html>

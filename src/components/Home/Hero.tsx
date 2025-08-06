@@ -8,10 +8,10 @@ const Hero = () => {
                 {/* text content */}
                 <div>
                     {/* heading */}
-                    <h1 className='text-3xl md:text-4xl text-white lg:text-5xl mt-6 mb-6 font-bold leading-[2.5rem] md:leading-[3.5rem]'>Bring safety to quality</h1>
+                    <h1 className='text-3xl md:text-4xl text-white lg:text-5xl mt-6 mb-6 font-bold leading-[2.5rem] md:leading-[3.5rem]'>bring safety through quality</h1>
                     {/* description */}
                     <p className='text-xs sm:text-sm md:text-base font-medium text-gray-300'>
-                        BPPMHKP adalah singkatan dari Badan Pengendalian dan Pengawasan Mutu Hasil Kelautan dan Perikanan. Badan ini merupakan otoritas kompeten di bawah Kementerian Kelautan dan Perikanan (KKP) yang bertugas untuk menjamin mutu hasil kelautan dan perikanan melalui pengendalian dan pengawasan yang ketat, mulai dari hulu hingga hilir. BPPMHKP berperan penting dalam memastikan keamanan, kualitas, dan keberlanjutan produk kelautan dan perikanan yang beredar di pasar, serta mendukung pengembangan industri perikanan yang berkelanjutan.
+                        BPPMHKP merupakan otoritas kompeten di bawah Kementerian Kelautan dan Perikanan (KKP) yang bertugas untuk menjamin mutu hasil kelautan dan perikanan melalui pengendalian dan pengawasan yang ketat, mulai dari hulu hingga hilir. BPPMHKP berperan penting dalam memastikan keamanan, kualitas, dan keberlanjutan produk kelautan dan perikanan yang beredar di pasar, serta mendukung pengembangan industri perikanan yang berkelanjutan.
                     </p>
                     {/* button */}
                     <div className='mt-8 flex flex-col sm:flex-row w-fit sm:items-center space-y-4 sm:space-y-0 sm:space-x-4'>
@@ -23,7 +23,7 @@ const Hero = () => {
                             <span className="absolute top-0 right-0 w-12 h-full -mr-3">
                                 <svg viewBox="0 0 487 487" className="object-cover w-full h-full" xmlns="http://www.w3.org/2000/svg"><path d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z" fill="#FFF" fillRule="nonzero" fillOpacity=".1"></path></svg>
                             </span>
-                            <span className="relative">Button Text</span>
+                            <span className="relative">SIAPMUTU</span>
                         </a>
                         {/* second button */}
                         <a href="#_" className="relative overflow-hidden px-10 py-3 font-medium text-white transition duration-300 bg-green-400 rounded-md hover:bg-green-500 ease">
@@ -33,13 +33,13 @@ const Hero = () => {
                             <span className="absolute top-0 right-0 w-12 h-full -mr-3">
                                 <svg viewBox="0 0 487 487" className="object-cover w-full h-full" xmlns="http://www.w3.org/2000/svg"><path d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z" fill="#FFF" fillRule="nonzero" fillOpacity=".1"></path></svg>
                             </span>
-                            <span className="relative">Button Text</span>
+                            <span className="relative">Info Selanjutnya</span>
                         </a>
                     </div>
                 </div>
                 {/* image content */}
-                <div className='mx-auto hidden xl:block'>
-                    <Image src='/images/hero.png' alt='image' width={380} height={380} />
+                <div className='mx-auto hidden xl:block bg-white rounded-3xl shadow-lg p-6'>
+                    <Image src='/images/bppmhkp-logo.png' alt='image' width={380} height={380} />
                 </div>
             </div> 
         </div>
