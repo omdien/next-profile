@@ -6,7 +6,7 @@ export const navLinks = [
   },
   {
     id: 2,
-    href: "#",
+    href: "#fitur",
     label: "Fitur",
   },
   {

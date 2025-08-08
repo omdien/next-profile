@@ -4,11 +4,11 @@ import Image from 'next/image';
 const Hero = () => {
     return (
         <div className='relative w-full h-screen flex justify-center flex-col bg-orange-500'>
-            <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-10'>
+            <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-6'>
 
                 {/* image content for mobile */}
-                <div className='block xl:hidden w-full flex justify-center mt-15 mb-2'>
-                    <div className='bg-white rounded-3xl shadow-lg p-4 w-1/2 max-w-xs'>
+                <div className='xl:hidden w-full flex justify-center mt-30 mb-2'>
+                    <div className='bg-white rounded-3xl shadow-lg py-4 px-10 w-6/8 max-w-xs'>
                         <Image src='/images/bppmhkp-logo.png' alt='image' width={300} height={300} className='mx-auto' />
                     </div>
                 </div>
