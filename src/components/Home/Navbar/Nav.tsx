@@ -29,10 +29,10 @@ const Nav = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div className={`transition-all ${navBg ? "bg-orange-400 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
+    <div className={`transition-all ${navBg ? "bg-yellow-500 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
       <div className="flex items-center justify-between h-full sm:w-[80%] w-[90%] mx-auto">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white sm:text-3xl">BPPMHKP</div>
+        <div className="text-2xl font-bold text-gray-700 sm:text-3xl">BPPMHKP</div>
         {/* Navlinks */}
         <div className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => {
@@ -40,7 +40,7 @@ const Nav = ({ openNav }: Props) => {
               <Link
                 key={link.id}
                 href={link.href}
-                className="text-white hover:text-green-300 font-semibold transition-colors duration-200"
+                className="text-gray-700 hover:text-green-700 font-semibold transition-colors duration-200"
               >
                 <p>{link.label}</p>
               </Link>
@@ -66,7 +66,7 @@ const Nav = ({ openNav }: Props) => {
           {/* burger menu */}
           <HiBars3BottomRight
             onClick={openNav}
-            className="w-8 h-8 cursor-pointer text-white lg:hidden"
+            className="w-8 h-8 cursor-pointer text-gray-700 lg:hidden"
           />
         </div>
       </div>

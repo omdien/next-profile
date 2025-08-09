@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
     return (
-        <div className='relative w-full h-screen flex justify-center flex-col bg-orange-500'>
+        <div className='relative w-full h-screen flex justify-center flex-col bg-yellow-400'>
             <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-6'>
 
                 {/* image content for mobile */}
@@ -16,12 +16,12 @@ const Hero = () => {
                 {/* text content */}
                 <div>
                     {/* heading */}
-                    <h1 className='text-3xl md:text-4xl text-white lg:text-5xl mt-6 mb-6 font-bold leading-[2.5rem] md:leading-[3.5rem]'>
+                    <h1 className='text-3xl md:text-4xl text-blue-800 lg:text-5xl mt-6 mb-6 font-bold leading-[2.5rem] md:leading-[3.5rem]'>
                         bring safety through quality
                     </h1>
 
                     {/* description */}
-                    <p className='text-xs sm:text-sm md:text-base font-medium text-gray-300'>
+                    <p className='text-xs sm:text-sm md:text-base font-medium text-gray-700'>
                         BPPMHKP merupakan otoritas kompeten di bawah Kementerian Kelautan dan Perikanan (KKP) yang bertugas untuk menjamin mutu hasil kelautan dan perikanan melalui pengendalian dan pengawasan yang ketat, mulai dari hulu hingga hilir. BPPMHKP berperan penting dalam memastikan keamanan, kualitas, dan keberlanjutan produk kelautan dan perikanan yang beredar di pasar, serta mendukung pengembangan industri perikanan yang berkelanjutan.
                     </p>
 
