@@ -18,9 +18,9 @@ const ThemeToggler = () => {
 
     return <button onClick={()=>setTheme(currentTheme === "dark"?"light":"dark")} className='p-2 transition'>
         {currentTheme === 'dark' ? (
-            <BiSun className='text-gray-700 w-8 h-8 cursor-pointer' onClick={() => setTheme('light')} />
+            <BiSun className='text-orange-500 w-8 h-8 cursor-pointer' onClick={() => setTheme('light')} />
         ) : (
-            <BiMoon className='text-gray-700     w-8 h-8 cursor-pointer' onClick={() => setTheme('dark')} />
+            <BiMoon className='text-blue-600     w-8 h-8 cursor-pointer' onClick={() => setTheme('dark')} />
         )}
         <span className='sr-only'>Toggle theme</span>
     </button>

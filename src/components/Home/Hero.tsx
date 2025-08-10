@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero = () => {
     return (
-        <div className='relative w-full h-screen flex justify-center flex-col bg-yellow-400'>
+        <div className='relative w-full h-screen flex justify-center flex-col bg-slate-100'>
             <div className='w-[90%] md:w-[80%] mx-auto items-center grid grid-cols-1 xl:grid-cols-2 gap-6'>
 
                 {/* image content for mobile */}
@@ -16,7 +16,7 @@ const Hero = () => {
                 {/* text content */}
                 <div>
                     {/* heading */}
-                    <h1 className='text-3xl md:text-4xl text-blue-800 lg:text-5xl mt-6 mb-6 font-bold leading-[2.5rem] md:leading-[3.5rem]'>
+                    <h1 className='text-3xl md:text-4xl text-blue-600 lg:text-5xl mt-6 mb-6 font-bold leading-[2.5rem] md:leading-[3.5rem]'>
                         bring safety through quality
                     </h1>
 
@@ -39,7 +39,7 @@ const Hero = () => {
                                     <path d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z" fill="#FFF" fillRule="nonzero" fillOpacity=".1"></path>
                                 </svg>
                             </span>
-                            <span className="relative">SIAPMUTU</span>
+                            <span className="relative">Siapmutu</span>
                         </a>
 
                         {/* second button */}
@@ -60,7 +60,7 @@ const Hero = () => {
                 </div>
 
                 {/* image content for desktop */}
-                <div className='mx-auto hidden xl:block bg-white rounded-3xl shadow-lg p-6'>
+                <div className='mx-auto hidden xl:block rounded-3xl shadow-lg p-6'>
                     <Image src='/images/bppmhkp-logo.png' alt='image' width={380} height={380} />
                 </div>
             </div>

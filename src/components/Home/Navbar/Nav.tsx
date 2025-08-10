@@ -5,6 +5,7 @@ import { navLinks } from "@/constant/constant";
 import { FaShoppingBag } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import ThemeToggler from "@/components/Helper/ThemeToggler";
+import Image from "next/image"
 
 type Props = {
   openNav: () => void;
@@ -29,10 +30,22 @@ const Nav = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div className={`transition-all ${navBg ? "bg-yellow-500 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
+    <div className={`transition-all ${navBg ? "bg-slate-200 shadow-md" : "fixed"} duration-200 h-[12vh] z-[100] fixed w-full`}>
       <div className="flex items-center justify-between h-full sm:w-[80%] w-[90%] mx-auto">
         {/* Logo */}
-        <div className="text-2xl font-bold text-gray-700 sm:text-3xl">BPPMHKP</div>
+        <div className="flex items-center space-x-2 text-2xl font-bold sm:text-3xl">
+          <Image
+            src="/images/logo.png"
+            alt="Logo BPPMHKP"
+            width={40} // sesuaikan ukuran
+            height={40}
+            priority
+          />
+          <div>
+            <span className="text-blue-600">BPP</span>
+            <span className="text-orange-500">MHKP</span>
+          </div>
+        </div>
         {/* Navlinks */}
         <div className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => {
@@ -40,7 +53,7 @@ const Nav = ({ openNav }: Props) => {
               <Link
                 key={link.id}
                 href={link.href}
-                className="text-gray-700 hover:text-green-700 font-semibold transition-colors duration-200"
+                className="text-blue-600 hover:text-orange-500 font-semibold transition-colors duration-200"
               >
                 <p>{link.label}</p>
               </Link>
@@ -66,7 +79,7 @@ const Nav = ({ openNav }: Props) => {
           {/* burger menu */}
           <HiBars3BottomRight
             onClick={openNav}
-            className="w-8 h-8 cursor-pointer text-gray-700 lg:hidden"
+            className="w-8 h-8 cursor-pointer text-blue-500 lg:hidden"
           />
         </div>
       </div>

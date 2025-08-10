@@ -6,12 +6,12 @@ import { MdNotifications, MdOutlineTouchApp } from 'react-icons/md';
 
 const Features = () => {
   const featureData = [
-    { id: 1, title: 'PPM', description: 'Permohonan Pelayanan Mutu', icon: <MdOutlineTouchApp className='w-12 h-12 text-orange-400 mx-auto' /> },
-    { id: 2, title: 'HONEST', description: 'HACCP Online System', icon: <FaFingerprint className='w-12 h-12 text-orange-400 mx-auto' /> },
-    { id: 3, title: 'REGMITRA', description: 'Registrasi Negara Mitra', icon: <HiOutlineChat className='w-12 h-12 text-orange-400 mx-auto' /> },
-    { id: 4, title: 'SILAB', description: 'Sistem Pengelolaan Bahan Laboratorium', icon: <MdNotifications className='w-12 h-12 text-orange-400 mx-auto' /> },
-    { id: 5, title: 'SKP-ONLINE', description: 'Sertifikat Kelayakan Pengolahan', icon: <IoWifiOutline className='w-12 h-12 text-orange-400 mx-auto' /> },
-    { id: 6, title: 'SIMONA', description: 'Sistem Monitoring Anggaran', icon: <IoAppsOutline className='w-12 h-12 text-orange-400 mx-auto' /> },
+    { id: 1, title: 'PPM', description: 'Permohonan Pelayanan Mutu', icon: <MdOutlineTouchApp className='w-12 h-12 text-orange-500 mx-auto' /> },
+    { id: 2, title: 'HONEST', description: 'HACCP Online System', icon: <FaFingerprint className='w-12 h-12 text-orange-500 mx-auto' /> },
+    { id: 3, title: 'REGMITRA', description: 'Registrasi Negara Mitra', icon: <HiOutlineChat className='w-12 h-12 text-orange-500 mx-auto' /> },
+    { id: 4, title: 'SILAB', description: 'Sistem Pengelolaan Bahan Laboratorium', icon: <MdNotifications className='w-12 h-12 text-orange-500 mx-auto' /> },
+    { id: 5, title: 'SKP-ONLINE', description: 'Sertifikat Kelayakan Pengolahan', icon: <IoWifiOutline className='w-12 h-12 text-orange-500 mx-auto' /> },
+    { id: 6, title: 'SIMONA', description: 'Sistem Monitoring Anggaran', icon: <IoAppsOutline className='w-12 h-12 text-orange-500 mx-auto' /> },
   ];
 
   return (
